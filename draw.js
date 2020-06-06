@@ -27,7 +27,7 @@ var snake;
         snake.checkCollision();
         document.querySelector('.score').innerText = snake.total;
 
-    }, 250); //250ms = 4 times a second
+    }, 200); //175 ms => x times per second
 }());
 
 //moving the snake with the arrow keys
