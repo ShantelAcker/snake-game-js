@@ -23,6 +23,9 @@ var snake;
         if (snake.eat(fruit)) {
             fruit.pickLocation();
         }
+        
+        snake.checkCollision();
+        document.querySelector('.score').innerText = snake.total;
 
     }, 250); //250ms = 4 times a second
 }());

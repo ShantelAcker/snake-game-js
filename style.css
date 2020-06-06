@@ -2,6 +2,9 @@ body {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     background-color: aliceblue;
+    max-width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 canvas {
@@ -10,10 +13,22 @@ canvas {
 
 h1 {
     font-size: 3em;
+    border-style: dashed solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 footer {
     font-weight: bold;
     font-size: 1.2em;
     margin-top: 100px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+.score {
+    font-weight: bold;
+    font-size: 2em;
 }
