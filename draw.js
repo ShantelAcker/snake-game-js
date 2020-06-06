@@ -16,9 +16,14 @@ var snake;
 
     window.setInterval(() =>  {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
+        fruit.draw();
         snake.update();
         snake.draw();
-        fruit.draw();
+
+        if (snake.eat(fruit)) {
+            fruit.pickLocation();
+        }
+
     }, 250); //250ms = 4 times a second
 }());
 
